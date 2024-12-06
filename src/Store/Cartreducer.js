@@ -46,7 +46,7 @@ export default function CartReducer(state = [], action){
             return [...state, {...action.payload, quantity: 1}]
             
         case CART_REMOVE_ITEMS:
-            return state.filter((cartItem)=> cartItem.id !== action.payload.productId)
+            return state.filter((cartItem)=> cartItem.productId !== action.payload.productId)
 
         case CART_ITEM_DECREASE_QUANTITY:
             return state

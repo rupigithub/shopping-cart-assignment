@@ -34,7 +34,7 @@ header{
 
 input{
   border-style: none;
-  width: 95%;
+  width: 70%;
   padding: 5px;
   border-radius: 5px;
   outline: none;
@@ -99,7 +99,8 @@ button{
 }
 
 .cart-container {
-  max-width: 1200px;
+  /* max-width: 1200px; */
+  width: 97vw;
   margin-inline: auto;
 }
 
@@ -123,12 +124,30 @@ button{
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.cart-item{
+  width: 150px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.cart-item div>h3{
+  width: 150px;
+  /* height: ; */
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
 .cart-item-container > div:not(.cart-item) {
   justify-content: center;
 }
 
 .cart-item-container > div:last-child {
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .cart-item-container img {
@@ -141,14 +160,34 @@ button{
   gap: 12px;
 } 
 
+.removeButton{
+  width: 60px;
+  height: 30px;
+  display: flex;
+  text-align: center;
+  text-wrap: wrap;
+}
+
 .cart-icon {
   position: relative;
+}
+
+h2{
+  position: sticky;
+  top: 55px;
+  background-color: white;
+}
+
+.cart-header{
+  position: sticky;
+  top: 80px;
+  background-color: white;
 }
 
 
 
 @media (max-width: 1200px) {
-  /* Styles for smaller screens */
+  /* Styles for medium size screens */
   .items-container-div{
     padding: 10px;
     display: grid;
@@ -159,7 +198,7 @@ button{
   }
 
   @media (max-width: 800px) {
-    /* Styles for smaller screens */
+    /* Styles for tab screens */
     .items-container-div{
       padding: 10px;
       display: grid;
@@ -170,7 +209,7 @@ button{
     }
 
     @media (max-width: 500px) {
-      /* Styles for smaller screens */
+      /* Styles for mobile screens */
       .items-container-div{
         padding: 10px;
         display: grid;

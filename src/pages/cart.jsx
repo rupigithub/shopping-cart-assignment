@@ -11,9 +11,10 @@ export default function Cart() {
       <div className="cart-items-container">
         <div className="cart-header cart-item-container">
           <div className="cart-item">Item</div>
-          <div className="item-price">Price</div>
+          {/* <div className="item-price">Price</div> */}
           <div className="quantity">Quantity</div>
           <div className="total">Total</div>
+          <div></div>
         </div>
         {cartItems.map(({productId, title, rating, price, image, quantity }) => (
           <CartItem
